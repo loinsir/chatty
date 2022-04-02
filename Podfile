@@ -12,10 +12,9 @@ target 'chatty' do
     pod 'ReactorKit'
 
     pod 'Firebase'
-    pod 'FirebaseAuth'
-    pod 'FirebaseFirestore'
-    pod 'FirebaseFirestoreSwift'
-    pod 'FirebaseStorage'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Firestore'
+    pod 'Firebase/Storage'
 
     pod 'MessageKit'
 
