@@ -11,6 +11,14 @@ target 'chatty' do
     pod 'RxCocoa', '6.5.0'
     pod 'ReactorKit'
 
+    pod 'Firebase'
+    pod 'FirebaseAuth'
+    pod 'FirebaseFirestore'
+    pod 'FirebaseFirestoreSwift'
+    pod 'FirebaseStorage'
+
+    pod 'MessageKit'
+
   target 'chattyTests' do
     inherit! :search_paths
     # Pods for testing

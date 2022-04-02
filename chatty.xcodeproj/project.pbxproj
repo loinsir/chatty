@@ -16,6 +16,7 @@
 		1986581627F7E4D3008EDD6B /* chattyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1986581527F7E4D3008EDD6B /* chattyTests.swift */; };
 		1986582027F7E4D4008EDD6B /* chattyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1986581F27F7E4D4008EDD6B /* chattyUITests.swift */; };
 		1986582227F7E4D4008EDD6B /* chattyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1986582127F7E4D4008EDD6B /* chattyUITestsLaunchTests.swift */; };
+		19989D4627F828CD0005C5E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19989D4527F828CD0005C5E6 /* GoogleService-Info.plist */; };
 		9E8C2E74847B7B83EF584EA9 /* Pods_chatty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5428663F00858EC9A8E0F7D /* Pods_chatty.framework */; };
 		F8F29AE21E6C0CD690DBE217 /* Pods_chatty_chattyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F024036D43A68F1B78E65F /* Pods_chatty_chattyUITests.framework */; };
 		FD0FADA6A67628A2186F1AC6 /* Pods_chattyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1C14A585AEC4D4ED58EEC9 /* Pods_chattyTests.framework */; };
@@ -53,6 +54,7 @@
 		1986581B27F7E4D4008EDD6B /* chattyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chattyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1986581F27F7E4D4008EDD6B /* chattyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chattyUITests.swift; sourceTree = "<group>"; };
 		1986582127F7E4D4008EDD6B /* chattyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chattyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		19989D4527F828CD0005C5E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1F1C14A585AEC4D4ED58EEC9 /* Pods_chattyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chattyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7835B854B9A74E7D787D72FE /* Pods-chattyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chattyTests.release.xcconfig"; path = "Target Support Files/Pods-chattyTests/Pods-chattyTests.release.xcconfig"; sourceTree = "<group>"; };
 		7F0C029D47AEF688858EC0D8 /* Pods-chatty-chattyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatty-chattyUITests.release.xcconfig"; path = "Target Support Files/Pods-chatty-chattyUITests/Pods-chatty-chattyUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,13 +118,15 @@
 		198657FD27F7E4D1008EDD6B /* chatty */ = {
 			isa = PBXGroup;
 			children = (
-				198657FE27F7E4D1008EDD6B /* AppDelegate.swift */,
+				19989D4127F827B30005C5E6 /* Utilities */,
+				19989D4027F827AA0005C5E6 /* Network */,
+				19989D3E27F826FB0005C5E6 /* Screens */,
 				1986580027F7E4D1008EDD6B /* SceneDelegate.swift */,
-				1986580227F7E4D1008EDD6B /* ViewController.swift */,
-				1986580427F7E4D1008EDD6B /* Main.storyboard */,
+				198657FE27F7E4D1008EDD6B /* AppDelegate.swift */,
 				1986580727F7E4D3008EDD6B /* Assets.xcassets */,
 				1986580927F7E4D3008EDD6B /* LaunchScreen.storyboard */,
 				1986580C27F7E4D3008EDD6B /* Info.plist */,
+				19989D4527F828CD0005C5E6 /* GoogleService-Info.plist */,
 			);
 			path = chatty;
 			sourceTree = "<group>";
@@ -142,6 +146,53 @@
 				1986582127F7E4D4008EDD6B /* chattyUITestsLaunchTests.swift */,
 			);
 			path = chattyUITests;
+			sourceTree = "<group>";
+		};
+		19989D3E27F826FB0005C5E6 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				19989D4427F828100005C5E6 /* Reactor */,
+				19989D4327F827FD0005C5E6 /* ViewControllers */,
+				19989D4227F827F50005C5E6 /* Storyboards */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		19989D4027F827AA0005C5E6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		19989D4127F827B30005C5E6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		19989D4227F827F50005C5E6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1986580427F7E4D1008EDD6B /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		19989D4327F827FD0005C5E6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1986580227F7E4D1008EDD6B /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		19989D4427F828100005C5E6 /* Reactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reactor;
 			sourceTree = "<group>";
 		};
 		4313AA8F013B3BF784766F57 /* Frameworks */ = {
@@ -164,7 +215,6 @@
 				08F49A8A8B0EB192EBB6FB2B /* Pods-chattyTests.debug.xcconfig */,
 				7835B854B9A74E7D787D72FE /* Pods-chattyTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -280,6 +330,7 @@
 				1986580B27F7E4D3008EDD6B /* LaunchScreen.storyboard in Resources */,
 				1986580827F7E4D3008EDD6B /* Assets.xcassets in Resources */,
 				1986580627F7E4D1008EDD6B /* Main.storyboard in Resources */,
+				19989D4627F828CD0005C5E6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
